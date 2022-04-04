@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$redGr: linear-gradient(90deg, #E53935 -10.26%, #E35D5B 114.79%);
+$blue: #2A3AD2;
+$red: #E53935;
+$green: #42806F;
+$p: 85px;
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    background: $green;
+}
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border: .25em solid $green;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+@supports (scrollbar-color: $green white) {
+    * {
+        scrollbar-color: $green white;
+        scrollbar-width: auto;
+    }
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    .nav-row {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+        margin-top: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .navlink {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        font-size: 2em;
+        -webkit-text-stroke: 1px $red;
+        color: transparent;
+        text-decoration: none;
+        margin-left: 54px;
+        margin-right: 17px;
+        background: linear-gradient($red, $red) left no-repeat, transparent;
+        background-size: 0% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 1s ease-in-out;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+    hr {
+        border: none;
+        color: $red;
+        background-color: $red;
+        height: 1px;
+    }
+}
+
+.hero {
+    display: flex;
+    width: 100vw;
+    height: 110vh;
+    background-image: url(../img/wave1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center, 50%, 50%;
+    justify-content: start;
+    align-items: center;
+    padding-left: $p;
+    .hero-title {
+        font-family: 'Oi', cursive;
+        font-size: 9em;
+        font-weight: 300;
+        line-height: 93.06%;
+        color: $blue;
+        span.error {
+            font-family: 'Poppins', sans-serif;
+            font-size: .3em;
+            font-weight: 400;
+            font-style: italic;
+            color: $red;
+            line-height: 100%;
+            a {
+                text-decoration: none;
+                color: $red;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    } 
+    svg {
+        position: absolute;
+        bottom: 60px;
+        right: 40px;
+    }
+}
+.err {
+    background-image: none;
+    height: 100vh;
+}
+.white {
+    color: white
+}
+
+.about {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: $red;
+    color: #fff;
+    padding-left: $p;
+    justify-content: start;
+    align-items: center;
+    .text {
+        margin: 40px;
+    }
+    .ab-title {
+        font-family: 'Oi', cursive;
+        font-size: 4em;
+        font-weight: 300;
+        line-height: 93.06%;
+    }
+    .ab-desc {
+        font-size: 1.75em;
+        width: 45vw;
+    }
+    .photo {
+        left: 0;
+    }
+}
+

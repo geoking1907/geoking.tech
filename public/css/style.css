@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,400;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #42806F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border: 0.25em solid #42806F;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@supports (scrollbar-color: #42806F white) {
+  * {
+    scrollbar-color: #42806F white;
+    scrollbar-width: auto;
+  }
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.navbar .nav-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.navbar .navlink {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  -webkit-text-stroke: 1px #E53935;
+  color: transparent;
+  text-decoration: none;
+  margin-left: 54px;
+  margin-right: 17px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E53935), to(#E53935)) left no-repeat, transparent;
+  background: linear-gradient(#E53935, #E53935) left no-repeat, transparent;
+  background-size: 0% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.navbar .navlink:hover {
+  background-size: 100% 100%;
+}
+
+.navbar hr {
+  border: none;
+  color: #E53935;
+  background-color: #E53935;
+  height: 1px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 110vh;
+  background-image: url(../img/wave1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 85px;
+}
+
+.hero .hero-title {
+  overflow-y: hidden;
+  font-family: "Oi", cursive;
+  font-size: 9em;
+  font-weight: 300;
+  line-height: 93.06%;
+  color: #2A3AD2;
+}
+
+.hero .hero-title span.error {
+  font-family: 'Raleway', sans-serif;
+  font-size: .3em;
+  font-weight: 400;
+  color: #E53935;
+  line-height: 100%;
+}
+
+.hero .hero-title span.error a {
+  text-decoration: none;
+  color: #E53935;
+}
+
+.hero .hero-title span.error a:hover {
+  text-decoration: underline;
+}
+
+.hero svg {
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
+}
+
+.err {
+  background-image: none;
+  height: 100vh;
+}
+
+.err .error {
+  line-height: 50em;
+}
+
+.white {
+  color: white;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #E53935;
+  color: #fff;
+  padding-left: 85px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .text {
+  margin: 40px;
+}
+
+.about .ab-title {
+  overflow-y: hidden;
+  font-family: 'Oi', cursive;
+  font-size: 4em;
+  font-weight: 300;
+  line-height: 93.06%;
+}
+
+.about .ab-desc {
+  overflow-y: hidden;
+  font-size: 1.75em;
+  width: 45vw;
+}
+
+.about .photo {
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */

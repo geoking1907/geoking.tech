@@ -1,0 +1,60 @@
+@media screen and (max-width: 1314px) {
+  .hero .hero-title {
+    font-size: 6em;
+  }
+  .hero, .about {
+    padding-left: 45px;
+  }
+}
+
+@media screen and (max-width: 1072px) {
+  .hero .hero-title {
+    font-size: 5em;
+  }
+  .hero, .about {
+    padding-left: 35px;
+  }
+  .about .ab-desc {
+    font-size: 1.25em;
+    width: 60vw;
+  }
+  .about .ab-title {
+    font-size: 3em;
+  }
+  .about .photo img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 746px) {
+  .hero .hero-title {
+    font-size: 3em;
+  }
+  .hero, .about {
+    padding-left: 20px;
+  }
+  .ab-title {
+    font-size: 2.75em;
+  }
+  .navbar .navlink {
+    font-size: 1.5em;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .hero .hero-title {
+    font-size: 2.5em;
+  }
+  .hero, .about {
+    padding-left: 15px;
+  }
+  .ab-title {
+    font-size: 2.5em;
+  }
+  .navbar .navlink {
+    font-size: 1em;
+    margin-left: 15px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

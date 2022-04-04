@@ -1,0 +1,25 @@
+{
+  "name": "geoking-website",
+  "version": "1.0.0",
+  "description": "Arakelian George portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "portfolio"
+  ],
+  "author": "George Arakelian <geo190708@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.3",
+    "gsap": "^3.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
