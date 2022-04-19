@@ -1,14 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,400;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap");
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
+::selection {
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.278); 
+}
+
+
 body {
   font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -36,14 +45,14 @@ body {
   }
 }
 
-.navbar {
+.navbarm {
   position: fixed;
   width: 100%;
   background-color: #fff;
   z-index: 1000;
 }
 
-.navbar .nav-row {
+.navbarm .nav-rowm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,14 +61,14 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
   margin-top: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.navbar .navlink {
+.navbarm .navlinkm {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 2em;
@@ -78,11 +87,11 @@ body {
   transition: 1s ease-in-out;
 }
 
-.navbar .navlink:hover {
+.navbarm .navlinkm:hover {
   background-size: 100% 100%;
 }
 
-.navbar hr {
+.navbarm .hrm {
   border: none;
   color: #E53935;
   background-color: #E53935;
@@ -110,7 +119,7 @@ body {
 
 .hero .hero-title {
   overflow-y: hidden;
-  font-family: "Oi", cursive;
+  font-family: 'Oi', cursive;
   font-size: 9em;
   font-weight: 300;
   line-height: 93.06%;
@@ -191,4 +200,57 @@ body {
 .about .photo {
   left: 0;
 }
-/*# sourceMappingURL=style.css.map */
+
+.white-back {
+  background: #fff;
+  color: #000;
+  
+}
+
+.card-title {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.crgr {
+  color: #000;
+}
+.autoh { 
+  height: auto !important;
+  min-height: 130vh;
+}
+.crgr .hero-title { 
+  color: #FFC555;
+}
+.crgr .cont {
+  align-self: center;
+  justify-self: center;
+}
+
+.foot {
+  bottom: 0;
+}
+
+.card {
+  background-color: #f5f5f5;
+  border-radius: 90px 0 90px 0;
+  width: 23rem;
+  height: 23rem;
+  padding:  2em;
+}
+.card-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+
+
+
+.adminhero .hero-title { 
+  color: #E53935;
+}
+
+.about .text a {
+  color: #fff;
+  text-decoration: none;
+}

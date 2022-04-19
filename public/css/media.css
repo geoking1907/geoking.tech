@@ -36,7 +36,7 @@
   .ab-title {
     font-size: 2.75em;
   }
-  .navbar .navlink {
+  .navbarm .navlinkm {
     font-size: 1.5em;
     margin-left: 25px;
   }
@@ -52,9 +52,9 @@
   .ab-title {
     font-size: 2.5em;
   }
-  .navbar .navlink {
+  .navbarm .navlinkm {
     font-size: 1em;
-    margin-left: 15px;
+    margin-left: 10px;
   }
 }
 /*# sourceMappingURL=media.css.map */
